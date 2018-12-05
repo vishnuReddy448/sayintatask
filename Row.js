@@ -15,7 +15,7 @@ class Row extends React.Component {
         }
         for (var i = 0; i <= this.props.columns; i++) {
             if (i != 0) {
-                box.push(<Box space={this.props.data.spacebwClmns} index = {i} />)
+                box.push(<Box space={this.props.data.spacebwClmns} id = {i} />)
             }
         }
         return (

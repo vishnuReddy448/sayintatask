@@ -45,7 +45,7 @@ class App extends React.Component {
     var columns = this.state.noOfColumns.split(',')
     for (var i = 0; i <= this.state.noOfRows; i++) {
       if (i != 0) {
-        row.push(<Row data={this.state} index={i} columns={i == 1 ? columns[0] : columns[1]} />)
+        row.push(<Row data={this.state} index={i} columns={ columns[i-1]} />)
       }
     }
 
